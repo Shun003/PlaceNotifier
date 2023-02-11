@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249122672993D43600B13F40 /* PlaceNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249122662993D43600B13F40 /* PlaceNotifier.swift */; };
+		2491226C2993DF0D00B13F40 /* PlaceNotifierCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491226B2993DF0D00B13F40 /* PlaceNotifierCell.swift */; };
+		249122712997825F00B13F40 /* CreateNewPlaceNotifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249122702997825F00B13F40 /* CreateNewPlaceNotifierView.swift */; };
+		249122732997828300B13F40 /* CreateNewPlaceNotifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249122722997828300B13F40 /* CreateNewPlaceNotifierViewController.swift */; };
+		24912275299782D200B13F40 /* CreateNewPlaceNotifierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24912274299782D200B13F40 /* CreateNewPlaceNotifierModel.swift */; };
+		249122772997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249122762997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift */; };
+		24E5EBA6298FE1BD000F868D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBA5298FE1BD000F868D /* AppDelegate.swift */; };
+		24E5EBA8298FE1BD000F868D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBA7298FE1BD000F868D /* SceneDelegate.swift */; };
+		24E5EBB0298FE1BD000F868D /* PlaceNotifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBAE298FE1BD000F868D /* PlaceNotifier.xcdatamodeld */; };
+		24E5EBB2298FE1BF000F868D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E5EBB1298FE1BF000F868D /* Assets.xcassets */; };
+		24E5EBB5298FE1BF000F868D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E5EBB3298FE1BF000F868D /* LaunchScreen.storyboard */; };
+		24E5EBBE298FE1DD000F868D /* PlaceNotifierListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBBD298FE1DD000F868D /* PlaceNotifierListView.swift */; };
+		24E5EBC0298FE217000F868D /* PlaceNotifierListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBBF298FE217000F868D /* PlaceNotifierListViewController.swift */; };
+		24E5EBC3298FE304000F868D /* PlaceNotifierListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBC2298FE304000F868D /* PlaceNotifierListModel.swift */; };
+		24E5EBC5298FE37C000F868D /* PlaceNotifierListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBC4298FE37C000F868D /* PlaceNotifierListPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		249122662993D43600B13F40 /* PlaceNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNotifier.swift; sourceTree = "<group>"; };
+		2491226B2993DF0D00B13F40 /* PlaceNotifierCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNotifierCell.swift; sourceTree = "<group>"; };
+		249122702997825F00B13F40 /* CreateNewPlaceNotifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceNotifierView.swift; sourceTree = "<group>"; };
+		249122722997828300B13F40 /* CreateNewPlaceNotifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceNotifierViewController.swift; sourceTree = "<group>"; };
+		24912274299782D200B13F40 /* CreateNewPlaceNotifierModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceNotifierModel.swift; sourceTree = "<group>"; };
+		249122762997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceNotifierPresenter.swift; sourceTree = "<group>"; };
+		24E5EBA2298FE1BD000F868D /* PlaceNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E5EBA5298FE1BD000F868D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24E5EBA7298FE1BD000F868D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		24E5EBAF298FE1BD000F868D /* PlaceNotifier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlaceNotifier.xcdatamodel; sourceTree = "<group>"; };
+		24E5EBB1298FE1BF000F868D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24E5EBB4298FE1BF000F868D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24E5EBB6298FE1BF000F868D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E5EBBD298FE1DD000F868D /* PlaceNotifierListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNotifierListView.swift; sourceTree = "<group>"; };
+		24E5EBBF298FE217000F868D /* PlaceNotifierListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNotifierListViewController.swift; sourceTree = "<group>"; };
+		24E5EBC2298FE304000F868D /* PlaceNotifierListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNotifierListModel.swift; sourceTree = "<group>"; };
+		24E5EBC4298FE37C000F868D /* PlaceNotifierListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNotifierListPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24E5EB9F298FE1BD000F868D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		249122652993D42300B13F40 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				249122662993D43600B13F40 /* PlaceNotifier.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		249122682993D43B00B13F40 /* Modlues */ = {
+			isa = PBXGroup;
+			children = (
+				24E5EBBC298FE1C4000F868D /* PlaceNotifierList */,
+				2491226F2997823F00B13F40 /* CreateNewPlaceNotifier */,
+			);
+			path = Modlues;
+			sourceTree = "<group>";
+		};
+		249122692993DDF000B13F40 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2491226B2993DF0D00B13F40 /* PlaceNotifierCell.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		2491226F2997823F00B13F40 /* CreateNewPlaceNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				24912274299782D200B13F40 /* CreateNewPlaceNotifierModel.swift */,
+				249122702997825F00B13F40 /* CreateNewPlaceNotifierView.swift */,
+				249122722997828300B13F40 /* CreateNewPlaceNotifierViewController.swift */,
+				249122762997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift */,
+			);
+			path = CreateNewPlaceNotifier;
+			sourceTree = "<group>";
+		};
+		24E5EB99298FE1BD000F868D = {
+			isa = PBXGroup;
+			children = (
+				24E5EBA4298FE1BD000F868D /* PlaceNotifier */,
+				24E5EBA3298FE1BD000F868D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24E5EBA3298FE1BD000F868D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24E5EBA2298FE1BD000F868D /* PlaceNotifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24E5EBA4298FE1BD000F868D /* PlaceNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				24E5EBA5298FE1BD000F868D /* AppDelegate.swift */,
+				24E5EBA7298FE1BD000F868D /* SceneDelegate.swift */,
+				24E5EBB1298FE1BF000F868D /* Assets.xcassets */,
+				24E5EBB3298FE1BF000F868D /* LaunchScreen.storyboard */,
+				24E5EBB6298FE1BF000F868D /* Info.plist */,
+				24E5EBAE298FE1BD000F868D /* PlaceNotifier.xcdatamodeld */,
+				249122652993D42300B13F40 /* Entity */,
+				249122692993DDF000B13F40 /* UIComponents */,
+				249122682993D43B00B13F40 /* Modlues */,
+			);
+			path = PlaceNotifier;
+			sourceTree = "<group>";
+		};
+		24E5EBBC298FE1C4000F868D /* PlaceNotifierList */ = {
+			isa = PBXGroup;
+			children = (
+				24E5EBC2298FE304000F868D /* PlaceNotifierListModel.swift */,
+				24E5EBBD298FE1DD000F868D /* PlaceNotifierListView.swift */,
+				24E5EBBF298FE217000F868D /* PlaceNotifierListViewController.swift */,
+				24E5EBC4298FE37C000F868D /* PlaceNotifierListPresenter.swift */,
+			);
+			path = PlaceNotifierList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24E5EBA1298FE1BD000F868D /* PlaceNotifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E5EBB9298FE1BF000F868D /* Build configuration list for PBXNativeTarget "PlaceNotifier" */;
+			buildPhases = (
+				24E5EB9E298FE1BD000F868D /* Sources */,
+				24E5EB9F298FE1BD000F868D /* Frameworks */,
+				24E5EBA0298FE1BD000F868D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaceNotifier;
+			productName = PlaceNotifier;
+			productReference = 24E5EBA2298FE1BD000F868D /* PlaceNotifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E5EB9A298FE1BD000F868D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					24E5EBA1298FE1BD000F868D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 24E5EB9D298FE1BD000F868D /* Build configuration list for PBXProject "PlaceNotifier" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24E5EB99298FE1BD000F868D;
+			productRefGroup = 24E5EBA3298FE1BD000F868D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24E5EBA1298FE1BD000F868D /* PlaceNotifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E5EBA0298FE1BD000F868D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E5EBB5298FE1BF000F868D /* LaunchScreen.storyboard in Resources */,
+				24E5EBB2298FE1BF000F868D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E5EB9E298FE1BD000F868D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2491226C2993DF0D00B13F40 /* PlaceNotifierCell.swift in Sources */,
+				249122732997828300B13F40 /* CreateNewPlaceNotifierViewController.swift in Sources */,
+				24E5EBC0298FE217000F868D /* PlaceNotifierListViewController.swift in Sources */,
+				249122712997825F00B13F40 /* CreateNewPlaceNotifierView.swift in Sources */,
+				24912275299782D200B13F40 /* CreateNewPlaceNotifierModel.swift in Sources */,
+				24E5EBC3298FE304000F868D /* PlaceNotifierListModel.swift in Sources */,
+				24E5EBA6298FE1BD000F868D /* AppDelegate.swift in Sources */,
+				249122672993D43600B13F40 /* PlaceNotifier.swift in Sources */,
+				24E5EBA8298FE1BD000F868D /* SceneDelegate.swift in Sources */,
+				24E5EBBE298FE1DD000F868D /* PlaceNotifierListView.swift in Sources */,
+				24E5EBC5298FE37C000F868D /* PlaceNotifierListPresenter.swift in Sources */,
+				249122772997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift in Sources */,
+				24E5EBB0298FE1BD000F868D /* PlaceNotifier.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24E5EBB3298FE1BF000F868D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E5EBB4298FE1BF000F868D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24E5EBB7298FE1BF000F868D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24E5EBB8298FE1BF000F868D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24E5EBBA298FE1BF000F868D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD63SSVLUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaceNotifier/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.jysrmh-sh.PlaceNotifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24E5EBBB298FE1BF000F868D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD63SSVLUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaceNotifier/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.jysrmh-sh.PlaceNotifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E5EB9D298FE1BD000F868D /* Build configuration list for PBXProject "PlaceNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E5EBB7298FE1BF000F868D /* Debug */,
+				24E5EBB8298FE1BF000F868D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E5EBB9298FE1BF000F868D /* Build configuration list for PBXNativeTarget "PlaceNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E5EBBA298FE1BF000F868D /* Debug */,
+				24E5EBBB298FE1BF000F868D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24E5EBAE298FE1BD000F868D /* PlaceNotifier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24E5EBAF298FE1BD000F868D /* PlaceNotifier.xcdatamodel */,
+			);
+			currentVersion = 24E5EBAF298FE1BD000F868D /* PlaceNotifier.xcdatamodel */;
+			path = PlaceNotifier.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24E5EB9A298FE1BD000F868D /* Project object */;
+}
