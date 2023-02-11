@@ -2,7 +2,7 @@ import UIKit
 
 final class PlaceNotifierListView: UIView {
     private(set) lazy var tableView = createTableView()
-    private(set) lazy var addNewPlaceNotifierButton = createAddNewPlaceNotifierButton()
+    private(set) lazy var createNewPlaceNotifierButton = createCreateNewPlaceNotifierButton()
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -24,7 +24,7 @@ extension PlaceNotifierListView {
         return tableView
     }
     
-    private func createAddNewPlaceNotifierButton() -> UIButton {
+    private func createCreateNewPlaceNotifierButton() -> UIButton {
         var configration = UIButton.Configuration.plain()
         configration.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 0)
         
@@ -35,7 +35,7 @@ extension PlaceNotifierListView {
         let titleAttributees = AttributeContainer([
             .font: UIFont.systemFont(ofSize: 17, weight: .bold)
         ])
-        configration.attributedTitle = AttributedString("追加", attributes: titleAttributees)
+        configration.attributedTitle = AttributedString("新規", attributes: titleAttributees)
         
         let button = UIButton(configuration: configration)
         return button

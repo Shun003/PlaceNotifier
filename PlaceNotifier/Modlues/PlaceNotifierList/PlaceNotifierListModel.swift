@@ -7,7 +7,7 @@ protocol PlaceNotifierListModelInput {
 
 final class PlaceNotifierListModel: PlaceNotifierListModelInput {
     func fetchPlaceNotifirs() throws -> [PlaceNotifier] {
-        []
+        try CoreDataRepository.fetchPlaceNotifiers()
     }
 }
 

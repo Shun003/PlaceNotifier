@@ -27,13 +27,13 @@ final class PlaceNotifierListViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.setToolbarHidden(false, animated: false)
         toolbarItems = [
-            UIBarButtonItem(customView: placeNotifierListView.addNewPlaceNotifierButton),
+            UIBarButtonItem(customView: placeNotifierListView.createNewPlaceNotifierButton),
             UIBarButtonItem(systemItem: .flexibleSpace)
         ]
         
         
         // addNewPlaceNotifierButton
-        placeNotifierListView.addNewPlaceNotifierButton.addAction(
+        placeNotifierListView.createNewPlaceNotifierButton.addAction(
             UIAction { _ in self.presenter?.didTappedCreateNewPlaseNotifierButton() },
             for: .touchUpInside
         )
@@ -91,11 +91,23 @@ extension PlaceNotifierListViewController: PlaceNotifierListPresenterOutput {
         let createNewPlaceNotifierViewController: CreateNewPlaceNotifierViewController = {
             let view = CreateNewPlaceNotifierViewController()
             let model = CreateNewPlaceNotifierModel()
-            let presenter = CreateNewPlaceNotifierPresenter(view: view, model: model)
+            let presenter = CreateNewPlaceNotifierPresenter(
+                view: view,
+                model: model,
+                updatePlaceNotifiersHandler: presenter.didUpdatedPlaceNotifierList
+            )
             view.inject(presenter: presenter)
             return view
         }()
         
-        present(UINavigationController(rootViewController: createNewPlaceNotifierViewController), animated: true)
+        let navigatoinControlelr = UINavigationController(rootViewController: createNewPlaceNotifierViewController)
+        navigatoinControlelr.modalPresentationStyle = .currentContext
+        
+        present(navigatoinControlelr, animated: true)
+    }
+    
+    /// TableViewの表示を更新
+    func reloadTableViewData() {
+        placeNotifierListView.tableView.reloadData()
     }
 }

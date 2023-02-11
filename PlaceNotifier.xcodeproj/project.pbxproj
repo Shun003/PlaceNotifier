@@ -13,6 +13,7 @@
 		249122732997828300B13F40 /* CreateNewPlaceNotifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249122722997828300B13F40 /* CreateNewPlaceNotifierViewController.swift */; };
 		24912275299782D200B13F40 /* CreateNewPlaceNotifierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24912274299782D200B13F40 /* CreateNewPlaceNotifierModel.swift */; };
 		249122772997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249122762997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift */; };
+		2491227929978AB600B13F40 /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491227829978AB600B13F40 /* CoreDataRepository.swift */; };
 		24E5EBA6298FE1BD000F868D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBA5298FE1BD000F868D /* AppDelegate.swift */; };
 		24E5EBA8298FE1BD000F868D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBA7298FE1BD000F868D /* SceneDelegate.swift */; };
 		24E5EBB0298FE1BD000F868D /* PlaceNotifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24E5EBAE298FE1BD000F868D /* PlaceNotifier.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 		249122722997828300B13F40 /* CreateNewPlaceNotifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceNotifierViewController.swift; sourceTree = "<group>"; };
 		24912274299782D200B13F40 /* CreateNewPlaceNotifierModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceNotifierModel.swift; sourceTree = "<group>"; };
 		249122762997831800B13F40 /* CreateNewPlaceNotifierPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceNotifierPresenter.swift; sourceTree = "<group>"; };
+		2491227829978AB600B13F40 /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
 		24E5EBA2298FE1BD000F868D /* PlaceNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E5EBA5298FE1BD000F868D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E5EBA7298FE1BD000F868D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,15 @@
 			path = CreateNewPlaceNotifier;
 			sourceTree = "<group>";
 		};
+		2491227A29978ABD00B13F40 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				24E5EBAE298FE1BD000F868D /* PlaceNotifier.xcdatamodeld */,
+				2491227829978AB600B13F40 /* CoreDataRepository.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		24E5EB99298FE1BD000F868D = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +126,7 @@
 				24E5EBB1298FE1BF000F868D /* Assets.xcassets */,
 				24E5EBB3298FE1BF000F868D /* LaunchScreen.storyboard */,
 				24E5EBB6298FE1BF000F868D /* Info.plist */,
-				24E5EBAE298FE1BD000F868D /* PlaceNotifier.xcdatamodeld */,
+				2491227A29978ABD00B13F40 /* CoreData */,
 				249122652993D42300B13F40 /* Entity */,
 				249122692993DDF000B13F40 /* UIComponents */,
 				249122682993D43B00B13F40 /* Modlues */,
@@ -210,6 +221,7 @@
 				249122712997825F00B13F40 /* CreateNewPlaceNotifierView.swift in Sources */,
 				24912275299782D200B13F40 /* CreateNewPlaceNotifierModel.swift in Sources */,
 				24E5EBC3298FE304000F868D /* PlaceNotifierListModel.swift in Sources */,
+				2491227929978AB600B13F40 /* CoreDataRepository.swift in Sources */,
 				24E5EBA6298FE1BD000F868D /* AppDelegate.swift in Sources */,
 				249122672993D43600B13F40 /* PlaceNotifier.swift in Sources */,
 				24E5EBA8298FE1BD000F868D /* SceneDelegate.swift in Sources */,
@@ -360,7 +372,6 @@
 				INFOPLIST_FILE = PlaceNotifier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,7 +399,6 @@
 				INFOPLIST_FILE = PlaceNotifier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
