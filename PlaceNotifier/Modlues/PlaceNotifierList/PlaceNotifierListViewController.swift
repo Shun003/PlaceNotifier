@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 final class PlaceNotifierListViewController: UIViewController {
     private lazy var placeNotifierListView = PlaceNotifierListView()
@@ -40,7 +41,7 @@ final class PlaceNotifierListViewController: UIViewController {
         
         // TableView
         placeNotifierListView.tableView.register(
-            PlaceNotifierCell.self,
+            UITableViewCell.self,
             forCellReuseIdentifier: "PlaceNotifierCell"
         )
         placeNotifierListView.tableView.dataSource = self
@@ -55,9 +56,11 @@ extension PlaceNotifierListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceNotifierCell") as! PlaceNotifierCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceNotifierCell")!
         if let placeNotifier = presenter.placeNotifier(forRow: indexPath.row) {
-            cell.configure(placeNotifier: placeNotifier)
+            cell.contentConfiguration = UIHostingConfiguration {
+                PlaceNotifierCell(placeNotifier)
+            }
         }
         return cell
     }
